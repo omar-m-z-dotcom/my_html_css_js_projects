@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+:root {
+    --form-height: 50px;
+}
+
+form {
+    width: 100%;
+    height: var(--form-height);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: lightgray;
+}
+
+#input-username {
+    width: 90%;
+    outline: 2px solid orangered;
+    height: 100%;
+    font-size: medium;
+    border: none;
+}
+
+#submit {
+    width: 9%;
+    height: calc(100% + 4px);
+    background: orangered;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+#repos-list {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: gray;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+#repos-list li {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+#repos-list .repo-data {
+    display: flex;
+    width: 25%;
+    height: fit-content;
+    background-color: inherit;
+    gap: 3px;
+}
+
+#repos-list .repo-data span {
+    padding: 2px;
+    background-color: teal;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#repos-list .repo-data a {
+    text-decoration: none;
+    padding: 2px;
+    background-color: salmon;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}

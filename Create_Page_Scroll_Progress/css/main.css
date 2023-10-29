@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 5000px;
+}
+
+.scroller {
+    position: fixed;
+    width: 0;
+    height: 10px;
+    background-color: midnightblue;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+    height: 100vh;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: fit-content;
+    height: 400px;
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+form {
+    width: 100%;
+    padding: inherit;
+    height: fit-content;
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+    grid-template-areas: ". exchange-label exchange ."
+        ". amount amount ." ". convert convert .";
+    background-color: teal;
+    border-radius: inherit;
+    gap: 10px;
+}
+
+label[for="exchange-currency"] {
+    grid-area: exchange-label;
+    display: flex;
+    justify-content: center;
+}
+
+#exchange-currency {
+    grid-area: exchange;
+    outline: none;
+    border-radius: inherit;
+}
+
+#convert {
+    grid-area: convert;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border-radius: inherit;
+}
+
+#amount {
+    grid-area: amount;
+    outline: none;
+    border-radius: inherit;
+}
+
+#result {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: seagreen;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: inherit;
+    padding: inherit;
+}
+
+#exchange-rate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: seagreen;
+    height: 30%;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: inherit;
+    padding: inherit;
+}
